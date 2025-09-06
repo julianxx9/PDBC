@@ -1,0 +1,219 @@
+{
+  "designSystemProfile": {
+    "name": "GrubFurn E-commerce Design System",
+    "description": "Un sistema de diseño para una marca de muebles de lujo, enfocado en el confort y la elegancia. El estilo combina tipografía clásica con un diseño moderno y espacioso, utilizando una paleta de colores cálida y profesional.",
+    "globalStyles": {
+      "palette": {
+        "primary": {
+          "name": "Dorado Acento",
+          "description": "Utilizado para botones de llamada a la acción, enlaces importantes y acentos visuales.",
+          "gradient": "linear-gradient(180deg, #F8A51B 0%, #E38B06 100%)",
+          "solid_fallback": "#E38B06"
+        },
+        "secondary": {
+          "name": "Carbón Oscuro",
+          "description": "El color principal para texto, titulares y elementos de alto contraste.",
+          "hex": "#0A0A0A"
+        },
+        "background": {
+          "name": "Beige Cálido / Hueso",
+          "description": "Color base para el fondo de la página, creando una sensación cálida y acogedora.",
+          "default": "#FBF9F4",
+          "subtle_variant": "#F5F1E9"
+        },
+        "text": {
+          "name": "Colores de Texto",
+          "description": "Define los colores para diferentes jerarquías de texto.",
+          "headings": "#0A0A0A",
+          "body": "#333333",
+          "onPrimary": "#FFFFFF",
+          "subtle": "#555555"
+        },
+        "ui": {
+          "name": "Interfaz de Usuario",
+          "description": "Colores para bordes, separadores y fondos de elementos interactivos.",
+          "borders": "#DDDDDD",
+          "input_background": "#FFFFFF",
+          "disabled": "#F0F0F0"
+        }
+      },
+      "typography": {
+        "primaryFont": {
+          "name": "Italiana",
+          "family": "\"Italiana\", Sans-serif",
+          "use": "Titulares principales y elementos de marca para un toque elegante y clásico."
+        },
+        "secondaryFont": {
+          "name": "Poppins",
+          "family": "\"Poppins\", Sans-serif",
+          "use": "Texto de cuerpo, párrafos, etiquetas, y elementos de interfaz para máxima legibilidad."
+        },
+        "scale": [
+          {
+            "level": "h1 (Hero)",
+            "fontSize": "clamp(4rem, 10vw, 8.125rem)",
+            "fontWeight": 700,
+            "fontFamily": "primaryFont",
+            "lineHeight": "1.1"
+          },
+          {
+            "level": "h2",
+            "fontSize": "clamp(2.5rem, 5vw, 3.125rem)",
+            "fontWeight": 600,
+            "fontFamily": "primaryFont",
+            "lineHeight": "1.2"
+          },
+          {
+            "level": "h3",
+            "fontSize": "1.5rem",
+            "fontWeight": 600,
+            "fontFamily": "secondaryFont",
+            "lineHeight": "1.4"
+          },
+          {
+            "level": "body",
+            "fontSize": "1rem",
+            "fontWeight": 400,
+            "fontFamily": "secondaryFont",
+            "lineHeight": "1.6"
+          },
+          {
+            "level": "label/meta",
+            "fontSize": "0.875rem",
+            "fontWeight": 400,
+            "fontFamily": "secondaryFont",
+            "lineHeight": "1.5"
+          }
+        ]
+      },
+      "layout": {
+        "containerMaxWidth": "1140px",
+        "gridSystem": "Basado en contenedores flexibles (Flexbox) con secciones de ancho completo y contenido en caja.",
+        "spacingUnit": "8px",
+        "commonSpacings": {
+          "small": "8px",
+          "medium": "16px",
+          "large": "24px",
+          "xlarge": "40px",
+          "sectionPadding": "80px 0"
+        }
+      },
+      "effects": {
+        "shadows": {
+          "softCard": "0px 4px 30px rgba(0, 0, 0, 0.05)",
+          "interactive": "0px 2px 10px rgba(0, 0, 0, 0.1)"
+        },
+        "borderRadius": {
+          "small": "5px",
+          "medium": "15px",
+          "pill": "50px"
+        }
+      }
+    },
+    "components": {
+      "button": {
+        "description": "Botones con un degradado dorado prominente y esquinas redondeadas.",
+        "style": {
+          "background": "palette.primary.gradient",
+          "color": "palette.text.onPrimary",
+          "borderRadius": "effects.borderRadius.pill",
+          "padding": "15px 35px",
+          "fontWeight": 600,
+          "textTransform": "capitalize",
+          "border": "none",
+          "transition": "all 0.3s ease"
+        },
+        "hover": {
+          "background": "palette.primary.gradient (dirección invertida o versión más oscura)",
+          "transform": "scale(1.05)"
+        }
+      },
+      "forms": {
+        "description": "Campos de entrada limpios y modernos con etiquetas claras.",
+        "input": {
+          "backgroundColor": "palette.ui.input_background",
+          "border": "1px solid palette.ui.borders",
+          "borderRadius": "effects.borderRadius.small",
+          "padding": "12px 15px",
+          "fontFamily": "typography.secondaryFont.family"
+        },
+        "label": {
+          "fontFamily": "typography.secondaryFont.family",
+          "fontWeight": 500,
+          "marginBottom": "8px",
+          "display": "block"
+        },
+        "focus": {
+          "borderColor": "palette.primary.solid_fallback",
+          "boxShadow": "0 0 5px rgba(227, 139, 6, 0.3)"
+        }
+      },
+      "card": {
+        "description": "Tarjetas versátiles para mostrar contenido como miembros del equipo o productos.",
+        "style": {
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": "effects.borderRadius.medium",
+          "boxShadow": "effects.shadows.softCard",
+          "padding": "24px",
+          "overflow": "hidden"
+        }
+      },
+      "navigation": {
+        "header": {
+          "structure": "Logo a la izquierda, menú de navegación centrado, iconos de carrito y perfil a la derecha.",
+          "background": "transparente o blanco sólido",
+          "padding": "16px 0",
+          "linkStyle": {
+            "fontFamily": "typography.secondaryFont.family",
+            "fontWeight": 500
+          },
+          "activeLinkStyle": {
+            "color": "palette.primary.solid_fallback"
+          }
+        },
+        "footer": {
+          "structure": "Diseño multi-columna. Incluye: 1) Logo y descripción, 2) Formulario de suscripción, 3) Menú de navegación, 4) Redes sociales y métodos de pago.",
+          "background": "palette.background.subtle_variant",
+          "textColor": "palette.text.subtle"
+        }
+      },
+      "tabs": {
+        "description": "Sistema de pestañas para organizar contenido, como en la página de detalles del producto.",
+        "container": {
+          "borderBottom": "1px solid palette.ui.borders"
+        },
+        "tab": {
+          "padding": "10px 20px",
+          "fontWeight": 500,
+          "color": "palette.text.subtle",
+          "borderBottom": "2px solid transparent"
+        },
+        "activeTab": {
+          "color": "palette.secondary.hex",
+          "borderBottom": "2px solid palette.primary.solid_fallback"
+        }
+      },
+      "accordion": {
+        "description": "Elemento desplegable para FAQs y contenido condensado.",
+        "header": {
+          "padding": "16px",
+          "fontWeight": 600,
+          "icon": "Un ícono de '+' que se transforma en '-' al estar activo, alineado a la derecha."
+        },
+        "activeHeader": {
+          "backgroundColor": "palette.background.subtle_variant"
+        },
+        "body": {
+          "padding": "16px",
+          "borderTop": "1px solid palette.ui.borders",
+          "backgroundColor": "#FFFFFF"
+        }
+      }
+    },
+    "iconography": {
+      "style": "Iconos de línea, ligeros y minimalistas para la interfaz de usuario. A veces se utilizan versiones sólidas para estados activos.",
+      "setsUsed": ["JkitIcon", "FontAwesome", "Custom SVG"],
+      "typicalSize": "24px"
+    }
+  }
+}

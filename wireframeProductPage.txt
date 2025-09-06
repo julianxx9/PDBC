@@ -1,0 +1,79 @@
++-------------------------------------------+
+|      [Logo de la Marca] Lumora Mall       |  <-- Header Fijo
++-------------------------------------------+
+|                                           |
+|   [<]  [🖼️ Imagen Principal Grande]  [>] |  <-- Carrusel de Imágenes/Video
+|        [ o ● o o ]                        |  <-- Indicador del carrusel
+|                                           |
++-------------------------------------------+
+|                                           |
+|   Título de Producto: Base celular 5 en 1 |
+|   ⭐⭐⭐⭐⭐ (132 reseñas)                  |
+|                                           |
+|   -------------------------------------   |
+|   | Precio anterior: $150.000           |   <-- Tarjeta de Precio
+|   | Precio AHORA: $75.000 (-50%)        |
+|   | 🔥 ¡Oferta termina en 02:15:48!     |  <- Descontador dinamico
+|   -------------------------------------   |
+|                                           |
+|   • ✔️ Beneficio clave #1 (Ej: Tritura...) |  <-- Bullet points (Resumen rápido)
+|   • ✔️ Beneficio clave #2 (Ej: Fácil...)   |
+|   • ✔️ Beneficio clave #3 (Ej: Ahorra...)  |
+|                                           |
++-------------------------------------------+
+|                                           |
+|   --- Sección de Confianza y Garantía --- |
+|                                           |
+| [🔒 Pago Seguro] [↩️ Devolución Fácil] [🚚 Envío Rápido] |
+|                                           |
+|   👀 28 personas viendo este producto     |  <-- Prueba Social y Urgencia; Contador de personas dinamico
+|    quedan 9 unidades en stock          |
+|                                           |
++-------------------------------------------+
+|                                           |
+|   --- Descripción Detallada ---           |
+|                                           |
+|   [+] ¿Qué es y cómo soluciona tu vida?   |  <-- Acordeón / Expandible
+|   |                                       |
+|   [+] Especificaciones Técnicas           |  <-- Acordeón / Expandible
+|   |   • Material: Acero Inoxidable        |
+|   |   • Dimensiones: 20x15 cm             |
+|   |   • Peso: 300g                        |
+|   |                                       |
+|   [+] ¿Qué recibirás en tu paquete?       |  <-- Acordeón / Expandible
+|                                           |
++-------------------------------------------+
+|                                           |
+|   --- Opiniones de Clientes ---           |
+|                                           |
+|   ⭐⭐⭐⭐⭐ "¡Excelente producto!"         |
+|   "Me ahorró mucho tiempo en la cocina,   |
+|   la calidad es increíble. Lo recomiendo" |
+|   - María G. [Foto real del cliente]      |
+|                                           |
+|   [Ver todas las reseñas]                 | 
+|                                           |
++-------------------------------------------+
+|                                           |
+|   --- Preguntas Frecuentes (FAQ) ---      |
+|                                           |
+|   [+] ¿Cuánto tarda el envío?             |  <-- Acordeón / Expandible
+|   [+] ¿Tiene garantía?                    |  <-- Acordeón / Expandible
+|   [+] ¿Qué métodos de pago aceptan?       |  <-- Acordeón / Expandible
+|                                           |
++-------------------------------------------+
+|                                           |
+|   --- Métodos de Pago ---         |
+|                                           |
+|   [CONTRA ENTREGA]  			    |  <-- Logos
+|                                           |
++-------------------------------------------+
+|                                           |
+|   [LOGO DE LA MARCA] © 2025 Lumora Mall   |
+|   [Política de Privacidad] [Términos]     |
+|                                           |
++-------------------------------------------+
+
++-------------------------------------------+
+|     [ 🛒 COMPRAR ]		            |  <-- **BOTÓN CTA FIJO (STICKY)**
++-------------------------------------------+
