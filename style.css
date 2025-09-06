@@ -1,4 +1,4 @@
-        :root {
+:root {
             /* Palette from TemaTienda.json */
             --primary-gradient: linear-gradient(180deg, #F8A51B 0%, #E38B06 100%);
             --primary-solid: #E38B06;
@@ -14,8 +14,8 @@
             --ui-disabled: #F0F0F0;
 
             /* Typography from TemaTienda.json */
-            --font-primary: "Italiana", serif;
-            --font-secondary: "Poppins", sans-serif;
+            --font-primary: "DynaPuff", sans-serif;
+            --font-secondary: "Quicksand", sans-serif;
             --fs-h1: clamp(4rem, 10vw, 8.125rem);
             --fs-h2: clamp(2.5rem, 5vw, 3.125rem);
             --fs-h3: 1.5rem;
@@ -49,6 +49,7 @@
             color: var(--text-body);
             font-size: var(--fs-body);
             line-height: 1.6;
+            font-weight: 500;
             padding-bottom: 100px; /* Space for sticky CTA */
         }
 
@@ -449,3 +450,32 @@
             font-size: var(--fs-label);
         }
 
+/* --- WhatsApp Contact Button --- */
+.whatsapp-contact {
+    padding: var(--spacing-large) 0;
+    text-align: center;
+}
+
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-medium);
+    background-color: #25D366;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    border-radius: var(--radius-pill);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: var(--shadow-interactive);
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-button i {
+    font-size: 1.5rem;
+}

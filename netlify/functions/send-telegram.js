@@ -19,9 +19,20 @@ exports.handler = async (event) => {
   try {
     const data = JSON.parse(event.body);
 
+    const now = new Date();
+    const timestamp = new Intl.DateTimeFormat('es-CO', {
+      dateStyle: 'full',
+      timeStyle: 'medium',
+      timeZone: 'America/Bogota'
+    }).format(now);
+
     // Formatear el mensaje para Telegram
     const message = `
       📢 **¡Nuevo Pedido!** 📢
+      -----------------------------------
+      🗓️ **Fecha:** ${timestamp}
+      -----------------------------------
+      📦 **Producto:** ${data.productTitle}
       -----------------------------------
       👤 **Cliente:** ${data.nombres} ${data.apellidos}
       📞 **Teléfono:** ${data.telefono}

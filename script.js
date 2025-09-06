@@ -49,7 +49,7 @@
                 const hours = Math.floor(timeInSeconds / 3600);
                 const minutes = Math.floor((timeInSeconds % 3600) / 60);
                 const seconds = timeInSeconds % 60;
-                countdownElement.innerHTML = `🔥 ¡Oferta termina en ${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}!`;
+                countdownElement.innerHTML = `<i class="fa-solid fa-fire-flame-curved"></i> ¡Oferta termina en ${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}!`;
             }, 1000);
 
             // People Watching
@@ -112,10 +112,10 @@
             const reviewsData = {
               "reviews": [
                 {"id": 1, "username": "Alfredo_D", "rating": 5, "date": "2025-04-11", "comment": "Hola, recién recibí el paquete que era muy rápido, excelente producto, alta calidad. Realmente lo aprecio. Muchas gracias. Exactamente como lo prescribes, es asombroso que realmente es.", "helpful_count": 0, "verified_purchase": true, "product_variant": {"type": "Color", "value": "Stand With BT"}},
-                {"id": 2, "username": "Noemi_I", "rating": null, "date": "2025-06-28", "comment": "Se ajusta a la descripción, buena calidad, el embalaje está bien.", "helpful_count": 0, "verified_purchase": true, "product_variant": {"type": "Color", "value": "Stand With BT"}},
-                {"id": 3, "username": "Santiago_I", "rating": null, "date": "2025-03-29", "comment": "El producto es bueno, coincide con la descripción y el precio, el sonido es mediano, juega bien para un sonido completo, el magnético es débil, tiene luz nocturna, cargador de teléfono.", "helpful_count": 0, "verified_purchase": true, "product_variant": {"type": "Color", "value": "Stand With BT"}},
-                {"id": 4, "username": "sanchez_perez", "rating": null, "date": "2025-07-04", "comment": "Excelente, permite sostener y usar los auriculares al mismo tiempo.", "helpful_count": 0, "verified_purchase": true, "product_variant": {"type": "Color", "value": "Stand With BT"}},
-                {"id": 5, "username": "Carlos_H", "rating": null, "date": "2025-03-12", "comment": "me gusta", "helpful_count": 1, "verified_purchase": true, "product_variant": {"type": "Color", "value": "Stand With BT"}},
+                {"id": 2, "username": "Noemi_I", "rating": 5, "date": "2025-06-28", "comment": "Se ajusta a la descripción, buena calidad, el embalaje está bien.", "helpful_count": 0, "verified_purchase": true, "product_variant": {"type": "Color", "value": "Stand With BT"}},
+                {"id": 3, "username": "Santiago_I", "rating": 5, "date": "2025-03-29", "comment": "El producto es bueno, coincide con la descripción y el precio, el sonido es mediano, juega bien para un sonido completo, el magnético es débil, tiene luz nocturna, cargador de teléfono.", "helpful_count": 0, "verified_purchase": true, "product_variant": {"type": "Color", "value": "Stand With BT"}},
+                {"id": 4, "username": "sanchez_perez", "rating": 5, "date": "2025-07-04", "comment": "Excelente, permite sostener y usar los auriculares al mismo tiempo.", "helpful_count": 0, "verified_purchase": true, "product_variant": {"type": "Color", "value": "Stand With BT"}},
+                {"id": 5, "username": "Carlos_H", "rating": 5, "date": "2025-03-12", "comment": "me gusta", "helpful_count": 1, "verified_purchase": true, "product_variant": {"type": "Color", "value": "Stand With BT"}},
                 {"id": 6, "username": "Comprador_Mex", "rating": 4, "date": null, "comment": "Esta padrisimo la bocina el único detalle es el manual no viene en español ahora tengo que buscar el traductor en Google para programar de ahí en fuera esta excelente el producto y precio, gracias", "helpful_count": null, "verified_purchase": true, "product_variant": null}
               ]
             };
@@ -127,7 +127,7 @@
                 if (rating === null || rating === undefined) return '<span>Sin calificación</span>';
                 let stars = '';
                 for(let i = 0; i < 5; i++) {
-                    stars += i < rating ? '⭐' : '☆';
+                    stars += i < rating ? '<i class="fa-solid fa-star"></i>' : '<i class="fa-regular fa-star"></i>';
                 }
                 return stars;
             }
@@ -256,6 +256,8 @@
 
                 const formData = new FormData(form);
                 const data = Object.fromEntries(formData.entries());
+                const productTitle = document.getElementById('product-title').textContent;
+                data.productTitle = productTitle;
 
                 try {
                     const response = await fetch('/.netlify/functions/send-telegram', {

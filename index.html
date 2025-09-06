@@ -6,7 +6,8 @@
     <title>Página de Producto - Lumora Mall</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -42,34 +43,33 @@
         </section>
 
         <section class="product-info">
-            <h1 class="product-title">Base celular 5 en 1</h1>
+            <h1 class="product-title" id="product-title">Base celular 5 en 1</h1>
             <div class="reviews-summary">
-                <span>⭐⭐⭐⭐⭐</span>
+                <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
                 <span>(132 reseñas)</span>
             </div>
 
             <div class="price-box">
                 <div class="old-price">$150.000</div>
                 <div class="current-price">$75.000 <span class="discount">(-50%)</span></div>
-                <div class="offer-countdown" id="countdown-timer">🔥 ¡Oferta termina en 02:15:48!</div>
+                <div class="offer-countdown" id="countdown-timer"><i class="fa-solid fa-fire-flame-curved"></i> ¡Oferta termina en 02:15:48!</div>
             </div>
 
             <ul class="key-benefits">
-                <li>✔️ Carga inalámbrica rápida para tu celular.</li>
-                <li>✔️ Altavoz Bluetooth integrado de alta calidad.</li>
-                <li>✔️ Lámpara de noche con luz LED ajustable.</li>
+                <li><i class="fa-solid fa-square-check"></i> Carga inalámbrica rápida para tu celular.</li>
+                <li><i class="fa-solid fa-square-check"></i> Altavoz Bluetooth integrado de alta calidad.</li>
+                <li><i class="fa-solid fa-square-check"></i> Lámpara de noche con luz LED ajustable.</li>
             </ul>
         </section>
 
         <section class="trust-section">
             <div class="trust-badges">
-                <div class="badge">🔒 Pago Seguro</div>
-                <div class="badge">↩️ Devolución Fácil</div>
-                <div class="badge">🚚 Envío Rápido</div>
+                <div class="badge"><i class="fa-solid fa-lock"></i> Pago Seguro</div>
+                <div class="badge"><i class="fa-solid fa-truck"></i> Envío Rápido</div>
             </div>
             <div class="social-proof">
-                <p>👀 <span id="people-watching">28</span> personas viendo este producto</p>
-                <p>🔥 ¡Quedan 9 unidades en stock!</p>
+                <p><i class="fa-solid fa-eye"></i> <span id="people-watching">28</span> personas viendo este producto</p>
+                <p><i class="fa-solid fa-fire-flame-curved"></i> ¡Quedan 9 unidades en stock!</p>
             </div>
         </section>
 
@@ -111,8 +111,8 @@
         <section class="customer-reviews">
             <h2>Opiniones de Clientes</h2>
             <div class="review-card">
-                <div class="reviews-summary"><span>⭐⭐⭐⭐⭐</span></div>
-                <p>"¡Excelente producto! Me ahorró mucho tiempo en la cocina, la calidad es increíble. Lo recomiendo."</p>
+                <div class="reviews-summary"><span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></div>
+                <p>"Excelente producto! Me entretengo en la cocina, la calidad de sonido es increíble. Lo recomiendo."</p>
                 <p class="author">- María G.</p>
             </div>
             <a class="view-all-reviews" id="view-all-reviews-link">Ver todas las 132 reseñas</a>
@@ -130,6 +130,12 @@
             </div>
         </section>
 
+        <section class="whatsapp-contact">
+            <a href="https://wa.link/r3ipcc" class="whatsapp-button" target="_blank">
+                <i class="fa-brands fa-square-whatsapp"></i> Contacto
+            </a>
+        </section>
+
     </main>
 
     <footer class="main-footer">
@@ -138,13 +144,13 @@
         </div>
         <p>© 2025 Lumora Mall</p>
         <div class="footer-links">
-            <a href="#">Política de Privacidad</a>
-            <a href="#">Términos</a>
+            <a href="politica.html">Política de Privacidad</a>
+            <a href="terminos.html">Términos</a>
         </div>
     </footer>
 
     <div class="sticky-cta-container">
-        <button class="cta-button" id="buy-button">🛒 COMPRAR</button>
+        <button class="cta-button" id="buy-button"><i class="fa-solid fa-shop"></i> COMPRAR</button>
     </div>
 
     <!-- Checkout Form Modal -->
@@ -185,7 +191,7 @@
                     <input type="text" id="direccion" name="direccion" required>
                 </div>
                 <div class="payment-method-info">
-                    <p>🚚 Método de pago: <strong>Pago contra entrega</strong></p>
+                    <p><i class="fa-solid fa-truck"></i> Método de pago: <strong>Pago contra entrega</strong></p>
                 </div>
                 <button type="submit" class="cta-button">Finalizar Compra</button>
             </form>
