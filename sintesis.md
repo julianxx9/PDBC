@@ -2,7 +2,7 @@
 
 ## Descripción General
 
-Este proyecto consiste en una página de aterrizaje (landing page) de una sola página, diseñada para la venta de un producto específico ("Base celular 5 en 1"). La página está construida con tecnologías web fundamentales (HTML, CSS, JavaScript) y no utiliza frameworks de frontend complejos como React o Vue, lo que la hace ligera y de rápido despliegue.
+Este proyecto consiste en una página de aterrizaje (landing page) de una sola página, diseñada para la venta de un producto específico ("Combo Embutidora + Trituradora de ajos"). La página está construida con tecnologías web fundamentales (HTML, CSS, JavaScript) y no utiliza frameworks de frontend complejos como React o Vue, lo que la hace ligera y de rápido despliegue.
 
 La funcionalidad principal se centra en presentar el producto de manera atractiva, generar confianza y urgencia en el comprador, y capturar los datos del pedido a través de un formulario de pago contra entrega. Los pedidos se procesan enviando una notificación a un chat de Telegram mediante una función serverless de Netlify.
 
@@ -67,3 +67,29 @@ El proyecto se estructura de la siguiente manera:
     - Sistema de pago contra entrega.
     - Notificación de pedidos en tiempo real a través de Telegram.
     - Contenido dinámico simulado (contadores) para generar urgencia.
+
+## IDs en `index.html`
+
+- `product-title`
+- `countdown-timer`
+- `beneficios`
+- `people-watching`
+- `view-all-reviews-link`
+- `buy-button`
+- `checkout-modal`
+- `form-container`
+- `close-checkout-modal`
+- `checkout-form`
+- `nombres`
+- `nombres-error`
+- `apellidos`
+- `apellidos-error`
+- `telefono`
+- `telefono-error`
+- `departamento`
+- `ciudad`
+- `direccion`
+- `reviews-modal`
+- `reviews-container`
+- `close-reviews-modal`
+- `reviews-list`
